@@ -1,9 +1,6 @@
 """
-APP.PY - Fase 6: Estetica e Icone
-=================================
-Aggiunge le icone personalizzate e migliora il layout.
+APP.PY - Fase 6.1: Estetica e Icone (Spostamento pulsante Avorio)
 """
-
 import streamlit as st
 import importlib
 import os
@@ -277,7 +274,7 @@ def avvia_test(nome_modulo, da_ripasso=False, domande_importate=None, nome_test_
             idx = d["indice_corretto"]
             d["risposta"] = "ABCD"[idx] if 0 <= idx <= 3 else "A"
 
-    num_domande_desiderate = 30 # Impostato a 30 come richiesto
+    num_domande_desiderate = 30 
     if len(tutte_le_domande) > num_domande_desiderate:
         domande_scelte = random.sample(tutte_le_domande, num_domande_desiderate)
     else:
@@ -543,8 +540,7 @@ elif st.session_state.fase == "risultato":
     schermata_risultato()
 
 # =====================================================================
-# PULSANTE AVORIO: sovrapposto, senza sidebar o colonne aggiuntive.
-# Disattivandolo, torna visibile il tema nativo di Streamlit.
+# PULSANTE AVORIO
 # =====================================================================
 def _alterna_avorio():
     st.session_state["tema_avorio_attivo"] = not st.session_state.get(
@@ -559,7 +555,7 @@ def _mostra_pulsante_avorio():
     .st-key-pulsante_avorio_fisso {
         position: fixed !important;
         top: 1.15rem !important;
-        right: 6rem !important;
+        right: 10rem !important; /* Modificato da 6rem a 10rem */
         width: 4.5rem !important;
         z-index: 999999;
         margin: 0 !important;

@@ -1,1 +1,27 @@
+# ==========================================
+# TEMA DI BASE (usato da "System")
+# ==========================================
+[theme]
+base = "light"
+backgroundColor = "#F5F5DC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#333333"
+primaryColor = "#2E8B57"
 
+# ==========================================
+# TEMA "LIGHT" (Bianco)
+# ==========================================
+[theme.light]
+base = "light"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F5F5"
+textColor = "#333333"
+
+# ==========================================
+# TEMA "DARK" (Nero)
+# ==========================================
+[theme.dark]
+base = "dark"
+backgroundColor = "#1E1E1E"
+secondaryBackgroundColor = "#2D2D2D"
+textColor = "#E0E0E0"

@@ -1,5 +1,5 @@
 """
-APP.PY - Fase 6.2: Estetica e Icone (Spostamento pulsante Avorio)
+APP.PY - Fase 6.3: Estetica e Icone (Posizione ottimale pulsante Avorio)
 """
 import streamlit as st
 import importlib
@@ -555,7 +555,7 @@ def _mostra_pulsante_avorio():
     .st-key-pulsante_avorio_fisso {
         position: fixed !important;
         top: 1.15rem !important;
-        right: 14rem !important; /* Spostato a 14rem per non coprire Share */
+        right: 12rem !important; /* Spostato a 12rem per una posizione bilanciata */
         width: 4.5rem !important;
         z-index: 999999;
         margin: 0 !important;
